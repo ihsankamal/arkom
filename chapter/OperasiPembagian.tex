@@ -25,10 +25,34 @@ Menurut penemuan kedua pembagi yang terkait dengan penemuan ini, shifter kiri di
 Sejak pertama kali komputer elektronik digunakan, komputer beroperasi dengan menggunakan bilangan biner, yaitu bilangan dengan basis 2 pada sistem bilangan. Semua kode program dan data pada komputer disimpan serta dimanipulasi dalam format biner yang merupakan kode-kode mesin komputer. Sehingga semua per-hitungannya diolah menggunakan aritmatik biner, yaitu bilangan yang hanya memiliki nilai dua kemungkinan yaitu 0 dan 1 dan sering disebut sebagai bit (binary digit atau dalam arsitektur elektronik biasa disebut sebagai digital logic. Representasi bilangan biner bas dilihat disamping ini. Posisi sebuah angka akan menentukan berapa bobot nilainya. Posisi paling depan (kiri) sebuah bilangan memiliki nilai yang paling besar sehingga disebut sebarai MSB (Most Significant Bit), dan posisi paling belakang (kanan) sebuah bilangan memiliki nilai yang paling kecil sehinggal disebut sebagai LSB (Leased Significant Bit).
 
 Contoh: reprentasi bilangan dengan basis biner:
+\begin{equation}
 101102 = 1*2^4 + 0*2^3+1*2^1+0*2^0=2210
+\end{equation}
 
 \subsection{Bilangan Heksadesimal}
 Bilangan heksadesimal atau biasa disebut heksa saja, berbasis 16 memiliki nilai yang disimbolkan dengan 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f. Adanya bilanagn ini dikarenakan operasi bilangan biner untuk data yang lebih besar akan menjadi susah, hingga bilangan ini sering digunakan untuk menggambarkan memori computer atau intruksi. Setiap digit bilangan heksa mewakili 4 bit bilangan biner, dan 2 digit bilangan heksadesimal mewakili satu byte.
+Sebagai contoh bilangan hexa 41 (2 nible), pada format ASCII mewakili karakter “A”, bilangan hexa 42 mewakili karakter “B”, dan segabainya.
+\subsubsection{konversi}
+Untuk mengkonversinya ke dalam bilangan desimal, dapat menggunakan formula berikut:
+Dari bilangan heksadesimal H yang merupakan untai digit hn hn-1… h2 h1 h0, jika dikonversikan menjadi bilangan desimal D, maka seperti gambar \ref{rumus}
+\begin{figure}[ht]
+	\centerline{\includegraphics[width=1\textwidth]{figures/rumus.jpg}}
+	\caption{rumus}
+	\label{rumus}
+	\end{figure}
+Sebagai contoh, bilangan heksa 10E yang akan dikonversi ke dalam bilangan desimal:
+\begin{itemize}
+\item Digit-digit 10E dapat dipisahkan dan mengganti bilangan A sampai F (jika terdapat) menjadi bilangan desimal padanannya. Pada contoh ini, 10E diubah menjadi barisan: 1,0,14 (E = 14 dalam basis 16)
+\item Mengalikan dari tiap digit terhadap nilai tempatnya.
+\end{itemize}
+\begin{equation}
+1 x 16^2 + 0 x 16^1 + 14 x 16^0
+= 256 + 0 + 14
+= 270
+\end{equation}
+Dengan demikian, bilangan 10E heksadesimal sama dengan bilangan desimal 270.
+
+
 \subsection(contoh2 operasi bilangan)
 Sebagai contoh apabila dalam perkalian 3 x 4 = k tentu k = 12 maka, dalam pembagian hal tersebut dapat dinyatakan,dengan bentuk 12 : 3 = n atau 12 : 4 = n
 Dengan demikian 12 : 3 = n apabila dinyatakan dalam bentuk perkalian akan menjadi 12 = n x 3, sedangkan 12 : 4 = n menjadi bentuk perkalian menjadi 12 = n x 4. Untuk mencari nilai n dari bentuk 12 = n x 3, sama artinya dengan mencari jawab pertanyaan : bilangan manakah yang jika dikalikan dengan 3 akan menghasilkan 12 atau berapakah 12 : 3  Dua pertanyaan ini mungkin akan menghasilkan bilangan yang sama. Jadi apabila dalam pertanyaan yang pertama mendapatkan nilai 4, maka berarti pula nilai dari 12 : 3 = 4.
